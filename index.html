@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Gacha Gift - Retro Pokémon Style!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400&family=VT323:wght@400&family=Orbitron:wght@400;700&family=Share+Tech+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background Music Toggle -->
+        <div class="music-toggle" id="musicToggle">
+            <span class="music-icon">🎵</span>
+            <span class="music-text">Music Off</span>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1 class="title">Subi's Gacha Gift</h1>
+            <p class="subtitle">Click to pull some magical birthday surprises!</p>
+            
+            <!-- Treasure Chest -->
+            <div class="gacha-machine" id="gachaMachine">
+                <div class="machine-body">
+                    <!-- Pixel Art Treasure Chest Sprite -->
+                    <div class="pixel-chest-container">
+                        <img src="images/2025-07-19_21_43_18-Retro_pixel_art_treasure_chest_with_gemstone_elements___Premium_AI-generated_vec-removebg-preview.png" alt="Retro Pixel Art Treasure Chest" class="pixel-chest-sprite">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gift Display Area -->
+            <div class="gift-display" id="giftDisplay">
+                <div class="gift-card hidden" id="giftCard">
+                    <div class="gift-header">
+                        <h2 class="gift-title" id="giftTitle"></h2>
+                        <div class="gift-close" id="giftClose">×</div>
+                    </div>
+                    <div class="gift-image-container">
+                        <img class="gift-image" id="giftImage" src="" alt="">
+                    </div>
+                    <p class="gift-message" id="giftMessage"></p>
+                    <div class="gift-sparkles">
+                        <span class="sparkle">✨</span>
+                        <span class="sparkle">💫</span>
+                        <span class="sparkle">⭐</span>
+                    </div>
+                </div>
+                
+                <!-- Pull Button - Now inside gift display but outside card -->
+                <button class="pull-button" id="pullButton">
+                    <span class="button-text">Pull!</span>
+                    <span class="button-sparkle">✨</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Confetti Container -->
+        <div class="confetti-container" id="confettiContainer"></div>
+        
+        <!-- Background Music - Custom Retro Pokémon Only -->
+        <audio id="backgroundMusic" preload="none">
+            <!-- External sources removed - using custom Web Audio API music only -->
+        </audio>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
