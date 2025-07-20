@@ -22,20 +22,6 @@ A cute and interactive single-page birthday website where users can click a "Pul
 - **Rounded UI Elements**: Soft shadows and modern design
 - **Smooth Animations**: Bounce, float, and sparkle effects
 
-## 🎁 Gift Collection
-
-The website includes 10 themed gifts:
-
-1. **Charmander's Glow Serum** - Skincare boost for K-pop idol glow
-2. **Jimin's Denim Jacket** - Fashion from the BTS closet
-3. **Totoro Bubble Tea** - Soothing treat from the Ghibli café
-4. **Eevee Face Mask Pack** - Evolve your skincare game
-5. **K-pop Dance Energy Potion** - Restore stamina like Lisa
-6. **Pikachu LED Mirror** - Light up your makeup routine
-7. **BTS Concert Lightstick** - ARMY approved concert gear
-8. **Anime Character Hair Clips** - Cute anime-inspired accessories
-9. **Korean Sheet Mask Collection** - Hydration station
-10. **Fashion Week VIP Pass** - Front row seats to trendy shows
 
 ## 🖼️ Adding Custom Images
 
