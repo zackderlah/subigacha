@@ -294,8 +294,8 @@ body {
     box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
     position: relative;
     z-index: 1002; /* Higher than pull button to stay visible */
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: -20px;
+    margin-bottom: 0px;
     font-family: 'Press Start 2P', cursive;
     letter-spacing: 1px;
     display: block;
