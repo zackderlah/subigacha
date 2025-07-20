@@ -92,6 +92,138 @@ body {
     letter-spacing: 1px;
 }
 
+/* Card Information Section */
+.card-info {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.info-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-number {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    color: #FFD700;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.tier-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.tier-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.tier-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tier-item.legendary {
+    background: linear-gradient(135deg, #FFD70020, #FFA50020);
+    border-color: #FFD700;
+}
+
+.tier-item.epic {
+    background: linear-gradient(135deg, #FF69B420, #FF149320);
+    border-color: #FF69B4;
+}
+
+.tier-item.rare {
+    background: linear-gradient(135deg, #9370DB20, #6A5ACD20);
+    border-color: #9370DB;
+}
+
+.tier-item.magic {
+    background: linear-gradient(135deg, #87CEEB20, #4682B420);
+    border-color: #87CEEB;
+}
+
+.tier-name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.tier-item.legendary .tier-name {
+    color: #FFD700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tier-item.epic .tier-name {
+    color: #FF69B4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tier-item.rare .tier-name {
+    color: #9370DB;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tier-item.magic .tier-name {
+    color: #87CEEB;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tier-chance {
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 /* Treasure Chest */
 .gacha-machine {
     margin: 40px 0;
@@ -713,6 +845,45 @@ body {
         letter-spacing: 0.5px;
     }
     
+    .card-info {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .info-title {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .info-stats {
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .stat-number {
+        font-size: 1.3rem;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+    }
+    
+    .tier-info {
+        gap: 12px;
+    }
+    
+    .tier-item {
+        padding: 10px 12px;
+    }
+    
+    .tier-name {
+        font-size: 0.6rem;
+    }
+    
+    .tier-chance {
+        font-size: 1rem;
+    }
+    
     .machine-body {
         width: 250px;
         height: 200px;
@@ -781,6 +952,46 @@ body {
     .subtitle {
         font-size: 1rem;
         letter-spacing: 0.3px;
+    }
+    
+    .card-info {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .info-title {
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+    }
+    
+    .info-stats {
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .stat-number {
+        font-size: 1.1rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    .tier-info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .tier-item {
+        padding: 8px 10px;
+    }
+    
+    .tier-name {
+        font-size: 0.5rem;
+    }
+    
+    .tier-chance {
+        font-size: 0.9rem;
     }
     
     .machine-body {

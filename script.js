@@ -139,9 +139,17 @@ const capsule = document.getElementById('capsule');
 // State variables
 let isMusicPlaying = false;
 let currentGift = null;
+let foundCards = new Set(); // Track found cards
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
+    // Load found cards from session storage
+    const savedCards = sessionStorage.getItem('foundCards');
+    if (savedCards) {
+        foundCards = new Set(JSON.parse(savedCards));
+        updateCardsFoundCounter();
+    }
+    
     // Initialize audio
     initializeAudio();
     
@@ -252,6 +260,19 @@ function initializeAudio() {
     // backgroundMusic.load(); // Commented out to prevent external audio loading
 }
 
+// Update cards found counter
+function updateCardsFoundCounter() {
+    const counterElement = document.querySelector('.stat-number');
+    if (counterElement) {
+        counterElement.textContent = foundCards.size;
+    }
+}
+
+// Save found cards to session storage
+function saveFoundCards() {
+    sessionStorage.setItem('foundCards', JSON.stringify([...foundCards]));
+}
+
 // Pull a random gift with tier weighting
 function pullGift() {
     // Disable button temporarily
@@ -272,6 +293,11 @@ function pullGift() {
         // Get random gift with tier weighting
         const randomIndex = getWeightedRandomGift();
         currentGift = gifts[randomIndex];
+        
+        // Track found card
+        foundCards.add(currentGift.title);
+        updateCardsFoundCounter();
+        saveFoundCards();
         
         // Update gift display
         giftTitle.textContent = currentGift.title;
